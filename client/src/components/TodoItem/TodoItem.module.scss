@@ -1,0 +1,16 @@
+.todoItem {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+button {
+	margin-right: 20px;
+}

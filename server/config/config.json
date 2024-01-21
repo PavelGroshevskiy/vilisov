@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "admin",
+    "database": "vilisov",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": "1234"
+  },
+  "test": {
+    "username": "admin",
+    "password": "admin",
+    "database": "vilisov",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": "1234"
+  },
+  "production": {
+    "username": "admin",
+    "password": "admin",
+    "database": "vilisov",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": "1234"
+  }
+}

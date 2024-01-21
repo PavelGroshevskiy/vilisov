@@ -1,0 +1,19 @@
+.wrapper {
+	display: grid;
+	min-height: 100vh;
+	gap: 20px;
+	grid-template-columns: 50px minmax(150px, 350px) 1fr 50px;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+		". header header ."
+		". sidebar body .";
+}
+.header {
+	grid-area: header;
+}
+.sidebar {
+	grid-area: sidebar;
+}
+.body {
+	grid-area: body;
+}

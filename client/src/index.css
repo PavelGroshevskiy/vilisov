@@ -1,0 +1,34 @@
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	color: var(--gray);
+	background: var(--gray-light);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--orange: #ec6765;
+	--orange-hover: #e84a47;
+	--white: #ffffff;
+	--blue: #2c7fff;
+	--blue-hover: #1b6de9;
+	--gray: #292929;
+	--gray-footer: rgba(68, 68, 68, 1);
+	--gray-light: #e2e2e2;
+	--gray-hover: #c5c4c4;
+	--font-family: "IBM Plex Sans", sans-serif;
+}
