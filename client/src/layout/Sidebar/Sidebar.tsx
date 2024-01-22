@@ -39,14 +39,25 @@ const Sidebar = ({ className, ...props }: SidebarProps) => {
 	return (
 		<div className={cn(className, styles.sidebar)} {...props}>
 			{todoItems &&
-				todoItems.map((todoItem: ITodo) => (
-					<TodoItem
-						// key={todoItem.id}
-						todo={todoItem}
-						remove={handleRemove}
-						update={handleUpdate}
-					/>
-				))}
+				todoItems
+					.map((todoItem: ITodo) => (
+						<TodoItem
+							key={todoItem.id}
+							todo={todoItem}
+							remove={handleRemove}
+							update={handleUpdate}
+						/>
+					))
+					.sort(function (a, b) {
+						if (a.props.todo.id < b.props.todo.id) {
+							return 1;
+						}
+						if (a.props.todo.id > b.props.todo.id) {
+							return -1;
+						}
+
+						return 0;
+					})}
 		</div>
 	);
 };
