@@ -41,7 +41,7 @@ const Sidebar = ({ className, ...props }: SidebarProps) => {
 			{todoItems &&
 				todoItems.map((todoItem: ITodo) => (
 					<TodoItem
-						key={todoItem.id}
+						// key={todoItem.id}
 						todo={todoItem}
 						remove={handleRemove}
 						update={handleUpdate}

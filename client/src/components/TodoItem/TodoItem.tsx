@@ -1,15 +1,14 @@
-import { MouseEventHandler } from "react";
 import { Button } from "../Button/Button";
 import styles from "./TodoItem.module.scss";
 import { TodoItemProps } from "./TodoItem.props";
 import cn from "classnames";
-import { ITodo } from "../../types/ITodo";
 
 const TodoItem = ({ className, todo, remove, update, ...props }: TodoItemProps) => {
 	const handleDelete = (event: any) => {
 		event.stopPropagation();
 		remove(todo);
 	};
+
 	const handleUpdateEdit = (event: any) => {
 		event.stopPropagation();
 		const title = prompt() || "";
@@ -18,9 +17,7 @@ const TodoItem = ({ className, todo, remove, update, ...props }: TodoItemProps) 
 	};
 
 	const handleUpdateStatus = (event: any) => {
-		event.stopPropagation();
 		const status = !todo.status;
-		console.log({ ...todo });
 		update({ ...todo, status });
 	};
 

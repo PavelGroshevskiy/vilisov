@@ -12,7 +12,7 @@ const TodoForm = ({ className, ...props }: TodoFormProps) => {
 
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		const formData = new FormData(e.currentTarget);
-		console.log(e.currentTarget);
+
 		e.preventDefault();
 		const title = formData.get("title");
 		const description = formData.get("description");
